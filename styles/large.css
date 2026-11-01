@@ -1,0 +1,58 @@
+@media (min-width: 37.5rem) {
+
+    /* Header layout */
+    header {
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* Horizontal navigation */
+    nav {
+        background-color: var(--primary-color);
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .navigation li a {
+        border-bottom: none;
+        padding: 1rem 1.5rem;
+    }
+
+    /* Main Grid Layout matching template */
+    main {
+        max-width: 1100px;
+        margin: 2rem auto;
+    }
+
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+    }
+
+    section {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Certificate Courses Grid */
+    .cert-filter-buttons {
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .cert-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,197 @@
+:root {
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --primary-color: #0f172a;
+    --accent-color: #06b6d4;
+    --text-color: #1e293b;
+    --nav-bg: #1e293b;
+}
+
+/* Base Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 4px solid var(--accent-color);
+}
+
+header img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+header span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Hamburger Button */
+#menu {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+/* Navigation */
+nav {
+    background-color: var(--nav-bg);
+}
+
+.navigation {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navigation li a:hover,
+.navigation li a.active {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Main Content Area */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+section {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.05);
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Certificate Courses Section */
+.cert-filter-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cert-filter-buttons button {
+    flex: 1;
+    padding: 0.5rem;
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cert-item {
+    background-color: #e2e8f0;
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.cert-item.completed {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.cert-credits {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #64748b;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 4px solid var(--accent-color);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.social-links a {
+    color: var(--accent-color);
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+footer p {
+    margin: 0.4rem 0;
+}
