@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Huncho Frames and Interior Decor",
+        "address": "Nkaseim, Ahafo Region, Ghana",
+        "phone": "",
+        "website": "",
+        "description": "Frames, graphic design and interior decoration services.",
+        "membership": 3,
+        "image": "images/huncho.jpg"
+    },
+    {
+        "name": "PKAB Gas",
+        "address": "Nkaseim, Ahafo Region, Ghana",
+        "phone": "",
+        "website": "",
+        "description": "Domestic and automotive gas services.",
+        "membership": 2,
+        "image": "images/pkab.jpg"
+    },
+    {
+        "name": "E&E Mashke",
+        "address": "Nkaseim, Ahafo Region, Ghana",
+        "phone": "",
+        "website": "",
+        "description": "Locally prepared blended fermented kenkey.",
+        "membership": 1,
+        "image": "images/ee-mashke.jpg"
+    },
+    {
+        "name": "Hajia Memuna Food Joint",
+        "address": "Nkaseim, Ahafo Region, Ghana",
+        "phone": "",
+        "website": "",
+        "description": "Local food and catering services.",
+        "membership": 1,
+        "image": "images/hajia-memuna.jpg"
+    },
+    {
+        "name": "Nkaseim General Trading",
+        "address": "Nkaseim, Ahafo Region, Ghana",
+        "phone": "",
+        "website": "",
+        "description": "General merchandise and retail services.",
+        "membership": 1,
+        "image": "images/business-5.jpg"
+    },
+    {
+        "name": "Ahafo Agro Services",
+        "address": "Nkaseim, Ahafo Region, Ghana",
+        "phone": "",
+        "website": "",
+        "description": "Agricultural supplies and related services.",
+        "membership": 2,
+        "image": "images/business-6.jpg"
+    },
+    {
+        "name": "Nkaseim Fashion Centre",
+        "address": "Nkaseim, Ahafo Region, Ghana",
+        "phone": "",
+        "website": "",
+        "description": "Fashion, clothing and accessories.",
+        "membership": 1,
+        "image": "images/business-7.jpg"
+    }
+]

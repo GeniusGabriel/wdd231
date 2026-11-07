@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Directory | Nkaseim Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Explore businesses, services and organizations in Nkaseim and surrounding communities in the Ahafo Region of Ghana.">
+
+    <meta name="author" content="Your Name">
+
+    <meta property="og:title" content="Nkaseim Chamber of Commerce">
+    <meta property="og:description" content="Discover and support businesses in Nkaseim and surrounding communities.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/community.jpg">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    
+    <script src="scripts/main.js" defer></script>
+    <script src="directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <a class="brand" href="index.html">
+                <img src="images/favicon.ico" alt="Nkaseim Chamber of Commerce logo">
+                <span>Nkaseim Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navigation">
+                ☰
+            </button>
+        </div>
+
+        <nav id="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html" class="active" aria-current="page">Directory</a>
+            <a href="join.html">Join Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">Supporting Local Enterprise</p>
+            <h1>Business Directory</h1>
+            <p>
+                Discover businesses, services and organizations in Nkaseim
+                and surrounding communities.
+            </p>
+            <p>
+                Connect with local entrepreneurs and support the growth
+                of our community.
+            </p>
+        </section>
+
+        <section class="directory-section">
+            <h2>Explore Our Local Businesses</h2>
+
+            <div class="directory-controls">
+                <p>Choose how you want to view our businesses:</p>
+
+                <div class="view-buttons">
+                    <button id="grid-view" class="view-button active" aria-pressed="true">
+                        Grid View
+                    </button>
+
+                    <button id="list-view" class="view-button" aria-pressed="false">
+                        List View
+                    </button>
+                </div>
+            </div>
+
+            <div id="members-container" class="members-grid" aria-live="polite">
+                <p>Loading businesses...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>Nkaseim Chamber of Commerce</h2>
+                <p>Nkaseim, Ahafo Region, Ghana</p>
+                <p>Connecting Businesses. Growing Communities.</p>
+            </div>
+
+            <div>
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Nkaseim Chamber of Commerce
+                </p>
+                <p>WDD 231 Web Frontend Development</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

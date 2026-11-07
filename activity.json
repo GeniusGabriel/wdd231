@@ -1,0 +1,22 @@
+{
+    "family name": "Awushie-Tetteh",
+    "moveinDate": "2024-08-01",
+    "moveoutDate": "2025-05-31",
+    "numberOfPeople": 1,
+    "visitedByBishoric": true,
+    "indidualFamilyData": [
+        {
+            "firstName": "Gabriel",
+            "age": 22,
+            "gender": "Male",
+            "relationship": "Self"
+
+        },
+        {
+            "firstName": "N/A",
+            "age": 0,
+            "gender": "N/A",
+            "relationship": "N/A"
+        }
+    ]
+}
