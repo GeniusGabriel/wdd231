@@ -43,20 +43,28 @@ const listButton = document.querySelector("#list-view");
 // Get the business records from the JSON file
 async function getMembers() {
     try {
-        const response = await fetch("data/members.json");
+        const response = await fetch("./data/members.json");
 
         if (!response.ok) {
-            throw new Error("Could not load business records.");
+            throw new Error(`HTTP Error: ${response.status}`);
         }
 
         const members = await response.json();
+
+        if (!Array.isArray(members) || members.length === 0) {
+            throw new Error("No business records found.");
+        }
+
         displayMembers(members);
+
     } catch (error) {
-        membersContainer.textContent =
-            "Sorry, the business directory could not be loaded.";
-        console.error("Error:", error);
+        console.error("Directory Error:", error);
+
+        membersContainer.innerHTML =
+            "<p>Unable to load businesses. Please try again later.</p>";
     }
 }
+
 
 // Create and display business cards
 function displayMembers(members) {
