@@ -2,8 +2,8 @@
     {
         "name": "Huncho Frames and Interior Decor",
         "address": "Nkaseim, Ahafo Region, Ghana",
-        "phone": "",
-        "website": "",
+        "phone": "055 555 4567",
+        "website": "https://hunchoframes.com",
         "description": "Frames, graphic design and interior decoration services.",
         "membership": 3,
         "image": "images/huncho.webp"
@@ -11,8 +11,8 @@
     {
         "name": "PKAB Gas",
         "address": "Nkaseim, Ahafo Region, Ghana",
-        "phone": "",
-        "website": "",
+        "phone": "024 000 4568",
+        "website": "https://pkabgas.com",
         "description": "Domestic and automotive gas services.",
         "membership": 2,
         "image": "images/pkab.jpg"
@@ -20,8 +20,8 @@
     {
         "name": "E&E Mashke",
         "address": "Nkaseim, Ahafo Region, Ghana",
-        "phone": "",
-        "website": "",
+        "phone": "024 100 4547",
+        "website": "https://eemashke.com",
         "description": "Locally prepared blended fermented kenkey.",
         "membership": 1,
         "image": "images/ee.jpg"
@@ -29,8 +29,8 @@
     {
         "name": "Hajia Memuna Food Joint",
         "address": "Nkaseim, Ahafo Region, Ghana",
-        "phone": "",
-        "website": "",
+        "phone": "024 771 4532",
+        "website": "https://hajiamemuna.com",
         "description": "Local food and catering services.",
         "membership": 1,
         "image": "images/hajia.webp"
@@ -38,8 +38,8 @@
     {
         "name": "Nkaseim General Trading",
         "address": "Nkaseim, Ahafo Region, Ghana",
-        "phone": "",
-        "website": "",
+        "phone": "024 473 9527",
+        "website": "https://nkaseimgeneraltrading.com",
         "description": "General merchandise and retail services.",
         "membership": 1,
         "image": "images/nkasim.webp"
@@ -47,8 +47,8 @@
     {
         "name": "Ahafo Agro Services",
         "address": "Nkaseim, Ahafo Region, Ghana",
-        "phone": "",
-        "website": "",
+        "phone": "024 103 4597",
+        "website": "https://ahafoagro.com",
         "description": "Agricultural supplies and related services.",
         "membership": 2,
         "image": "images/agro.jpeg"
@@ -56,8 +56,8 @@
     {
         "name": "Nkaseim Fashion Centre",
         "address": "Nkaseim, Ahafo Region, Ghana",
-        "phone": "",
-        "website": "",
+        "phone": "024 333 4567",
+        "website": "https://nkaseimfashion.com",
         "description": "Fashion, clothing and accessories.",
         "membership": 1,
         "image": "images/fashion.webp"

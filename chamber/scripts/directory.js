@@ -1,37 +1,95 @@
+const membersContainer = document.querySelector("#members-container");
+const gridButton = document.querySelector("#grid-view");
+const listButton = document.querySelector("#list-view");
 
-// ======================================
-// MOBILE NAVIGATION
-// ======================================
+// Get the business records from the JSON file
+async function getMembers() {
+    try {
+        const response = await fetch("./data/members.json");
 
-const menuButton = document.querySelector("#menu-button");
-const navigation = document.querySelector("#navigation");
+        if (!response.ok) {
+            throw new Error(`HTTP Error: ${response.status}`);
+        }
 
-if (menuButton && navigation) {
-    menuButton.addEventListener("click", () => {
-        navigation.classList.toggle("open");
+        const members = await response.json();
 
-        const isOpen = navigation.classList.contains("open");
+        if (!Array.isArray(members) || members.length === 0) {
+            throw new Error("No business records found.");
+        }
 
-        menuButton.setAttribute("aria-expanded", String(isOpen));
+        displayMembers(members);
+
+    } catch (error) {
+        console.error("Directory Error:", error);
+
+        membersContainer.innerHTML =
+            "<p>Unable to load businesses. Please try again later.</p>";
+    }
+}
+
+
+// Create and display business cards
+function displayMembers(members) {
+    membersContainer.innerHTML = "";
+
+    members.forEach((member) => {
+        const card = document.createElement("article");
+        card.classList.add("member-card");
+
+
+        // Business image
+        const image = document.createElement("img");
+        image.src = member.image;
+        image.alt = `${member.name} business image`;
+        image.loading = "lazy";
+        image.width = 300;
+        image.height = 200;
+
+
+        const name = document.createElement("h3");
+        name.textContent = member.name;
+
+        const description = document.createElement("p");
+        description.textContent = member.description;
+
+        const address = document.createElement("p");
+        address.textContent = `Address: ${member.address}`;
+
+        const phone = document.createElement("p");
+        phone.textContent = member.phone
+            ? `Phone: ${member.phone}`
+            : "Phone: Not provided";
+
+        const membership = document.createElement("p");
+        const membershipNames = {
+            1: "Member",
+            2: "Silver Member",
+            3: "Gold Member"
+        };
+        membership.textContent =
+            `Membership: ${membershipNames[member.membership] || "Member"}`;
+
+        card.append(image, name, description, address, phone, membership);
+        membersContainer.appendChild(card);
     });
 }
 
-// ======================================
-// AUTOMATIC COPYRIGHT YEAR
-// ======================================
+// Switch between Grid and List views
+function setView(view) {
+    const showGrid = view === "grid";
 
-const currentYear = document.querySelector("#current-year");
+    membersContainer.classList.toggle("members-grid", showGrid);
+    membersContainer.classList.toggle("members-list", !showGrid);
 
-if (currentYear) {
-    currentYear.textContent = new Date().getFullYear();
+    gridButton.classList.toggle("active", showGrid);
+    listButton.classList.toggle("active", !showGrid);
+
+    gridButton.setAttribute("aria-pressed", String(showGrid));
+    listButton.setAttribute("aria-pressed", String(!showGrid));
 }
 
-// ======================================
-// LAST MODIFIED DATE
-// ======================================
+gridButton.addEventListener("click", () => setView("grid"));
+listButton.addEventListener("click", () => setView("list"));
 
-const lastModified = document.querySelector("#last-modified");
-
-if (lastModified) {
-    lastModified.textContent = document.lastModified;
-}
+// Load the business records when the page opens
+getMembers();

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home | Nkaseim Chamber of Commerce</title>
+
+<meta name="description"
+    content="Welcome to the Nkaseim Chamber of Commerce. Discover local businesses, upcoming events, community opportunities and business services in Nkaseim, Ahafo Region, Ghana.">
+
+    <meta name="author" content="Gabriel Awushie-Tetteh">
+
+<meta property="og:title" content="Nkaseim Chamber of Commerce | Home">
+    <meta property="og:description" content="Connecting businesses and growing communities in Nkaseim, Ahafo Region, Ghana.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://GeniusGabriel.github.io/wdd231/chamber/images/community.jpg">
+    <meta property="og:url" content="https://GeniusGabriel.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/homepage.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <a class="brand" href="index.html">
+                <img src="images/favicon.ico" alt="Nkaseim Chamber of Commerce logo">
+                <span>Nkaseim Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navigation">
+                ☰
+            </button>
+        </div>
+
+        <nav id="navigation" aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join Us</a>
+        </nav>
+    </header>
+<main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <img src="images/community.jpg" alt="Community and business development in Nkaseim" class="hero-image">
+
+        <div class="hero-content">
+            <h1>Welcome to Nkaseim</h1>
+
+            <p>
+                Connecting businesses. Growing communities.
+                Building opportunities together.
+            </p>
+
+            <a href="join.html" class="cta-button">
+                Join the Chamber
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Current Events Section -->
+    <section class="events-section">
+
+        <h2>Upcoming Events</h2>
+
+        <div class="events-container">
+
+            <article class="event-card">
+                <h3>Business Networking</h3>
+
+                <p>
+                    Connect with local entrepreneurs,
+                    business owners and professionals.
+                </p>
+
+                <span>Nkaseim Community</span>
+            </article>
+
+            <article class="event-card">
+                <h3>Community Development</h3>
+
+                <p>
+                    Supporting local initiatives and
+                    promoting sustainable development.
+                </p>
+
+                <span>Nkaseim, Ahafo Region</span>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Weather Section -->
+    <section class="weather-section">
+
+        <h2>Weather Information</h2>
+
+        <div class="weather-container">
+
+            <div class="current-weather">
+
+                <h3>Current Weather</h3>
+
+                <p id="current-temp">Loading...</p>
+
+                <p id="weather-description"></p>
+
+                <img id="weather-icon" src="" alt="">
+
+            </div>
+
+
+            <div class="forecast">
+
+                <h3>3-Day Forecast</h3>
+
+                <div id="forecast-container">
+                    <p>Loading forecast...</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Business Spotlights Section -->
+    <section class="spotlights-section">
+
+        <h2>Business Spotlights</h2>
+
+        <p>
+            Discover outstanding businesses serving
+            our community.
+        </p>
+
+        <div id="spotlights-container">
+
+            <p>Loading business spotlights...</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>Nkaseim Chamber of Commerce</h2>
+                <p>Nkaseim, Ahafo Region, Ghana</p>
+                <p>Connecting Businesses. Growing Communities.</p>
+            </div>
+
+            <div>
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Nkaseim Chamber of Commerce
+                </p>
+                <p>WDD 231 Web Frontend Development</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
