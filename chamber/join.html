@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Us | Nkaseim Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Apply for Nkaseim Chamber of Commerce membership. Explore membership levels and benefits for local businesses.">
+
+    <meta name="author" content="Gabriel Awushie-Tetteh">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Join the Nkaseim Chamber of Commerce">
+    <meta property="og:description"
+        content="Become a member of the Nkaseim Chamber of Commerce and grow your business.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://geniusgabriel.github.io/wdd231/chamber/images/community.jpg">
+    <meta property="og:url" content="https://geniusgabriel.github.io/wdd231/chamber/join.html">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/forms.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="header-content">
+
+            <a class="brand" href="index.html">
+                <img src="images/favicon.ico" alt="">
+                <span>Nkaseim Chamber of Commerce</span>
+            </a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navigation">
+                ☰
+            </button>
+
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav id="navigation" aria-label="Main navigation">
+
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active" aria-current="page">Join Us</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- PAGE INTRODUCTION -->
+        <section class="page-intro">
+
+            <p class="eyebrow">Become a Member</p>
+
+            <h1>Join the Nkaseim Chamber of Commerce</h1>
+
+            <p>
+                Become part of a growing business community.
+                Connect with entrepreneurs, discover opportunities
+                and contribute to the development of Nkaseim.
+            </p>
+
+        </section>
+
+
+        <!-- MEMBERSHIP APPLICATION SECTION -->
+        <section class="join-section">
+
+            <div class="join-layout">
+
+                <!-- APPLICATION FORM -->
+                <div class="form-container">
+
+                    <h2>Membership Application</h2>
+
+                    <p>
+                        Complete the form below to apply for
+                        membership.
+                    </p>
+
+                    <form action="thankyou.html" method="get">
+
+                        <!-- FIRST NAME -->
+                        <label for="first-name">
+                            First Name
+
+                            <input type="text" id="first-name" name="first-name" title="Enter your first name"
+                                autocomplete="given-name" required>
+                        </label>
+
+
+                        <!-- LAST NAME -->
+                        <label for="last-name">
+                            Last Name
+
+                            <input type="text" id="last-name" name="last-name" title="Enter your last name"
+                                autocomplete="family-name" required>
+                        </label>
+
+
+                        <!-- ORGANIZATIONAL TITLE -->
+                        <label for="organization-title">
+                            Organizational Title
+
+                            <input type="text" id="organization-title" name="organization-title"
+                                title="Enter your organizational title using at least seven letters, spaces or hyphens"
+                                autocomplete="organization-title" pattern="(?=.*[A-Za-z])[A-Za-z -]{7,}">
+                        </label>
+
+
+                        <!-- EMAIL -->
+                        <label for="email">
+                            Email Address
+
+                            <input type="email" id="email" name="email" title="Enter a valid email address"
+                                autocomplete="email" placeholder="example@email.com" required>
+                        </label>
+
+
+                        <!-- PHONE NUMBER -->
+                        <label for="phone">
+                            Mobile Phone Number
+
+                            <input type="tel" id="phone" name="phone" title="Enter your mobile phone number"
+                                autocomplete="tel" required>
+                        </label>
+
+
+                        <!-- BUSINESS NAME -->
+                        <label for="business-name">
+                            Business / Organization Name
+
+                            <input type="text" id="business-name" name="business-name"
+                                title="Enter your business or organization name" autocomplete="organization" required>
+                        </label>
+
+
+                        <!-- MEMBERSHIP LEVEL -->
+                        <label for="membership-level">
+                            Select Membership Level
+
+                            <select id="membership-level" name="membership-level" required>
+
+                                <option value="" disabled selected>
+                                    Select a membership level
+                                </option>
+
+                                <option value="np">NP Membership</option>
+
+                                <option value="bronze">
+                                    Bronze Membership
+                                </option>
+
+                                <option value="silver">
+                                    Silver Membership
+                                </option>
+
+                                <option value="gold">
+                                    Gold Membership
+                                </option>
+
+                            </select>
+
+                        </label>
+
+
+                        <!-- BUSINESS DESCRIPTION -->
+                        <label for="business-description">
+                            Business Description
+
+                            <textarea id="business-description" name="business-description"
+                                title="Describe your business or organization" rows="5"></textarea>
+                        </label>
+
+
+                        <!-- TIMESTAMP -->
+                        <input type="hidden" id="timestamp" name="timestamp">
+
+
+                        <!-- SUBMIT BUTTON -->
+                        <input type="submit" value="Submit Membership Application">
+
+                    </form>
+
+                </div>
+
+
+                <!-- MEMBERSHIP CARDS -->
+                <aside class="membership-cards">
+
+                    <h2>Membership Options</h2>
+
+                    <!-- NP MEMBERSHIP -->
+                    <article class="membership-card">
+
+                        <h3>NP Membership</h3>
+
+                        <p>
+                            Designed for nonprofit organizations.
+                        </p>
+
+                        <a href="#np-modal" class="modal-link">
+                            View Benefits
+                        </a>
+
+                    </article>
+
+
+                    <!-- BRONZE MEMBERSHIP -->
+                    <article class="membership-card">
+
+                        <h3>Bronze Membership</h3>
+
+                        <p>
+                            An affordable option for growing businesses.
+                        </p>
+
+                        <a href="#bronze-modal" class="modal-link">
+                            View Benefits
+                        </a>
+
+                    </article>
+
+
+                    <!-- SILVER MEMBERSHIP -->
+                    <article class="membership-card">
+
+                        <h3>Silver Membership</h3>
+
+                        <p>
+                            More opportunities to promote your business.
+                        </p>
+
+                        <a href="#silver-modal" class="modal-link">
+                            View Benefits
+                        </a>
+
+                    </article>
+
+
+                    <!-- GOLD MEMBERSHIP -->
+                    <article class="membership-card">
+
+                        <h3>Gold Membership</h3>
+
+                        <p>
+                            Premium benefits and business exposure.
+                        </p>
+
+                        <a href="#gold-modal" class="modal-link">
+                            View Benefits
+                        </a>
+
+                    </article>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMBERSHIP MODALS -->
+
+        <dialog id="np-modal">
+
+            <h2>NP Membership Benefits</h2>
+
+            <p>
+                Designed for nonprofit organizations.
+                Enjoy networking opportunities and access
+                to selected community events.
+            </p>
+
+            <button class="close-modal">Close</button>
+
+        </dialog>
+
+
+        <dialog id="bronze-modal">
+
+            <h2>Bronze Membership Benefits</h2>
+
+            <p>
+                Enjoy networking opportunities, selected
+                training sessions and business development support.
+            </p>
+
+            <button class="close-modal">Close</button>
+
+        </dialog>
+
+
+        <dialog id="silver-modal">
+
+            <h2>Silver Membership Benefits</h2>
+
+            <p>
+                Enjoy Bronze benefits, advertising opportunities,
+                event discounts and additional training.
+            </p>
+
+            <button class="close-modal">Close</button>
+
+        </dialog>
+
+
+        <dialog id="gold-modal">
+
+            <h2>Gold Membership Benefits</h2>
+
+            <p>
+                Enjoy premium advertising, homepage business
+                spotlights, exclusive networking events
+                and priority promotional opportunities.
+            </p>
+
+            <button class="close-modal">Close</button>
+
+        </dialog>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>Nkaseim Chamber of Commerce</h2>
+
+                <p>Nkaseim, Ahafo Region, Ghana</p>
+
+                <p>Connecting Businesses. Growing Communities.</p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Nkaseim Chamber of Commerce
+                </p>
+
+                <p>WDD 231 Web Frontend Development</p>
+
+                <p>
+                    Last Modified:
+                    <span id="last-modified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
